@@ -47,6 +47,19 @@ header {
     padding-left: 15px;
     margin: 0 auto;
 }
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 .header {
     display: flex;
     justify-content: space-between;
@@ -89,6 +102,7 @@ address {
 }
 .address-list {
     display: flex;
+    gap: 40px;
 }
 .address-link {
     color: var(--slate);
@@ -96,7 +110,6 @@ address {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    margin-left: 40px;
 }
 .address-link:hover,
 .address-link:focus {
@@ -265,6 +278,7 @@ address {
 .portfolio-button:focus {
     color: var(--white);
     background-color: #404BBF;
+    border: 1px solid var(--iris);
 }
 .card-content {
     padding: 32px 0 32px 16px;
@@ -295,7 +309,13 @@ address {
     color: var(--cloud);
 }
 .footer-log {
-    margin-bottom: 16px;
+    font-family: Raleway, sans-serif;
+    color: var(--iris);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
 }
 .footer-text {
     color: var(--cornflower);
@@ -304,4 +324,5 @@ address {
     line-height: 1.5;
     letter-spacing: 0.02em;
     width: 264px;
+    margin-top: 16px;
 }
